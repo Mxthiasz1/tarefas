@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathias</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Mathias Oliveira De Jesus</h1>
+
+    <p>Meu nome é Mathias, mas podem me chamar de Math.</p>
+    <p>Eu tenho 20 anos e estou fazendo faculdade de ADS na uninter,
+       confesso que eu estou super animado para fazer esse trabalho,
+       é a minha primeira vez fazendo isso. Gosto de codar, jogar futubol/games com meus amigos, embora eu nao tenha muitos.
+       Eu amo fazer boxing, muay thai e jiujitsu. adoro animais como cachorros e gatos. enfim, eu estou animado.
+    </p>
+
+    <ul>
+        <li>
+            O que eu gosto de fazer:
+
+            <ul>
+                <li>ler a biblia e servi a Deus</li>
+                <li>Jogar bola</li>
+                <li>jogar games</li>
+                <li>fazer artes marciais</li>
+                <li>passar um tempo com minha namorada</li>
+            </ul>
+         </li>
+    </ul>
+    <img src="futebol.png" width="120px"> <img src="biblia.png" width="120px" height="120px"><img src="boxing.png" width="120px"> <img src="games.png" width="120px"> <img src="ana.png.jpg" width="120px">
+     
+    <table>
+        <tr>
+            <th>Pais</th>
+            <th>Imagem</th>
+        </tr>
+        <tr>
+            <td>canada</td>
+            <td><img src="canada.png" width="120px"></td>
+        </tr>
+        <tr>
+            <td>holanda</td>
+            <td><img src="holanda.png" width="120px"></td>
+        </tr>
+        <tr>
+            <td>maldivas</td>
+            <td><img src="maldivas.png" width="120px"></td>
+        </tr>
+    </table>
+    <a href="https://codepen.io" target="_blank">codepen</a>
+
+    <button id="botao">Clique para ver uma mensagem!</button>
+    <div id="mensagem"></div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+CSS
+    
+
+body {
+    background-color: khaki;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(43, 33, 41);
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+ul {
+    line-height: 2;
+}
+
+img {
+    border-radius: 30px;
+    width: 200px;
+    display: block;
+    margin: 10px 0px;
+} 
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid rgb(43, 33, 41);
+}
+
+th, td {
+    padding: 10px;
+    text-align: center
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px; 
+    text-decoration: none;
+    color: #77a3e1;
+}
+
+a:hover {
+    color: rgb(43, 33, 41);
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+JAVASCRIPT
+
+
+let botao = document.querySelector("#botao");
+ botao.addEventListener("click",e =>{
+    botao.innerHTML = "seja bem vindo a minha pagina"
+ })
+    
